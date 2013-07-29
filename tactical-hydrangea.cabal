@@ -1,0 +1,25 @@
+name: tactical-hydrangea
+version: 1.0
+cabal-version: >= 1.12
+build-type: Simple
+license: BSD3
+license-file: LICENSE
+copyright: Copyright (c) 2012 Irene Knapp
+author: Irene Knapp <irene.knapp@icloud.com>
+maintainer: irene.knapp@icloud.com
+homepage: http://ireneknapp.com/software/
+bug-reports: https://github.com/IreneKnapp/tactical-hydrangea/issues
+category: Game
+synopsis: Arena shooter with two-dimensional platforming action
+description:
+
+Source-Repository head
+  type: git
+  location: https://github.com/IreneKnapp/tactical-hydrangea.git
+
+Executable hydrangea
+  main-is: Hydrangea.hs
+  build-depends: base >= 4.1 && < 5,
+                 GLFW >= 0.5.1.0 && < 1
+  hs-source-dirs: Haskell
+  default-language: Haskell2010
